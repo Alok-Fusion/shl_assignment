@@ -66,10 +66,7 @@ class CatalogRetriever:
         return results
 
     def format_for_prompt(self, items: list[dict]) -> str:
-        """
-        Format a list of catalog items for injection into the LLM prompt.
-        Returns newline-separated item summaries.
-        """
+        
         lines = []
         for item in items:
             desc = item.get("description", "")[:200]

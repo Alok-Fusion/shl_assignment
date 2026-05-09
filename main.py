@@ -1,7 +1,3 @@
-"""
-FastAPI app for the SHL Assessment Recommender API.
-Stateless: full conversation history passed in every request.
-"""
 
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
